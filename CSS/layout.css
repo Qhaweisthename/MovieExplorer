@@ -1,39 +1,34 @@
 .movie-layouts {
-    display: grid;
-    /* Defines 3 columns of equal width (1 fraction of available space) */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(4); /* Desktop */
   
 }
 
-@media (min-width: 600px) and (max-width: 1500px) {
+
+@media (max-width: 1600px) {
   .movie-layouts {
-    display: grid;
-    /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr 1fr 1fr 1fr  ;
-}
+    grid-template-columns: repeat(4);
+  }
 }
 
 
+/* Tablets */
+@media (max-width: 1200px) {
+  .movie-layouts {
+    grid-template-columns: repeat(3);
+  }
+}
 
-@media (min-width: 600px) and (max-width: 1200px) {
+/* Small tablets */
+@media (max-width: 900px) {
   .movie-layouts {
-    display: grid;
-    /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-columns: repeat(2);
+  }
 }
-}
-@media (min-width: 600px) and (max-width: 900px) {
-  .movie-layouts {
-    display: grid;
-    /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr 1fr   ;
-}
-}
+
+/* Phones */
 @media (max-width: 530px) {
   .movie-layouts {
-    display: grid;
-    /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr   ;
+    grid-template-columns: 1fr;
+  }
 }
-}
-

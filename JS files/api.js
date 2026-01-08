@@ -44,8 +44,8 @@ export async function getData(movieName) {
 }
 
 //api used for front page
-export async function getDataFrontPage(){
-  const url = "https://api.themoviedb.org/3/movie/top_rated";
+export async function getDataFrontPage(endpoint){
+  const url = `https://api.themoviedb.org/3/movie/${endpoint}`;
 
   const options = {
     headers: {

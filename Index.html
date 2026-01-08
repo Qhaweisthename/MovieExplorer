@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Explorer App</title>
+    <title>Movie Explorer</title>
     <!-- Link to external CSS file (optional) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./CSS/layout.css">
     
 </head>
-<body>
+<body class>
 <!-- Bootstrap navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
   <div class="container-fluid" style="display:flex; justify-content:space-between;">
-    <a class="navbar-brand" href="#">Movie Explorer App</a>
+    <a class="navbar-brand" href="#">Movie Explorer</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,28 +28,21 @@
     </div>
 </nav>
     <!-- All visible page content goes here -->
-    <h1>Welcome to the movie Explorer App</h1>
+    <h1 style="display: flex; justify-content: center;" class="my-2">Welcome to the movie Explorer</h1>
 
     <!--movie cards-->
-<section id="top-rated-movies" class="movie-layouts">
- <div class="card mx-5 my-5" id="movie-card" style="width: 18rem;">
-  <img src="./Images/bladerunner.webp" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Movie Name</h5>
-    <p class="card-text">Overview</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Language: En</li>
-    <li class="list-group-item">Release date: </li>
-    <li class="list-group-item">Popularity: </li>
-  </ul>
-</div>
+<section id="top-rated-movies" class="movie-layouts p-5">
+<div id="top_rated"></div>
+<div id="popular"></div>
+<div id="upcoming"></div>
+<div id="now_playing"></div>
+
 </section>
     
    
 
     <!-- Link to external JavaScript file (optional, placed here for performance) -->
-    <script type="module" src="./JS files/ui.js"></script>
+    <script type="module" src="./JS files/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
