@@ -39,5 +39,5 @@ This project was built to practice working with APIs, async JavaScript, and DOM 
 
 ## 🔑 Deployed Live Site From Github pages
 
-- link: [text](https://qhaweisthename.github.io/MovieExplorer/)
+- link: [My Movie Explorer Web Application](https://qhaweisthename.github.io/MovieExplorer/)
 
