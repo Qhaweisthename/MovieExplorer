@@ -5,35 +5,35 @@
   
 }
 
+@media (min-width: 600px) and (max-width: 1500px) {
+  .movie-layouts {
+    display: grid;
+    /* Redefine layout for larger screens, e.g., 3 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+}
+}
+
+
+
 @media (min-width: 600px) and (max-width: 1200px) {
   .movie-layouts {
     display: grid;
     /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr  ;
 }
 }
-
-
-
-@media (min-width: 769px) {
-  .container {
+@media (min-width: 600px) and (max-width: 900px) {
+  .movie-layouts {
+    display: grid;
     /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-      "header header header"
-      "nav content sidebar"
-      "footer footer footer";
-  }
+    grid-template-columns: 1fr 1fr   ;
 }
-
-
-@media (min-width: 769px) {
-  .container {
+}
+@media (max-width: 530px) {
+  .movie-layouts {
+    display: grid;
     /* Redefine layout for larger screens, e.g., 3 columns */
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-      "header header header"
-      "nav content sidebar"
-      "footer footer footer";
-  }
+    grid-template-columns: 1fr   ;
 }
+}
+
