@@ -97,3 +97,15 @@ export async function searchedMovies(data){
  container.innerHTML = searchCardHTML;
 
 }
+
+//clear searched UI
+
+export function resetSearch(){
+const subHeading = document.getElementById("search-title");
+subHeading.innerHTML = "";
+const container = document.getElementById("searched-movie");
+container.innerHTML = "";
+const searchBar = document.getElementById("search-bar");
+searchBar.value = "";
+
+}

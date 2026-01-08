@@ -22,9 +22,10 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input class="form-control me-2" id="search-bar" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
-        <button class="btn btn-outline-danger" id="reset-button">Reset</button>
+        <!--When button is in a form it defaults to type="submit"-->
+        <button type="button" class="btn btn-outline-danger" id="reset-button">Reset</button>
       </form>
     </div>
 </nav>
@@ -47,6 +48,8 @@
 
 </section>
     
+
+<button style="display: flex; justify-content: center;" type="button" class="btn btn-outline-danger mx-auto my-3" id="rick-button">Don't Click me 🙂</button>
    
 
     <!-- Link to external JavaScript file (optional, placed here for performance) -->
