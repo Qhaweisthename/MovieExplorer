@@ -1,0 +1,39 @@
+.movie-layouts {
+    display: grid;
+    /* Defines 3 columns of equal width (1 fraction of available space) */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .movie-layouts {
+    display: grid;
+    /* Redefine layout for larger screens, e.g., 3 columns */
+    grid-template-columns: 1fr  ;
+}
+}
+
+
+
+@media (min-width: 769px) {
+  .container {
+    /* Redefine layout for larger screens, e.g., 3 columns */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "nav content sidebar"
+      "footer footer footer";
+  }
+}
+
+
+@media (min-width: 769px) {
+  .container {
+    /* Redefine layout for larger screens, e.g., 3 columns */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "nav content sidebar"
+      "footer footer footer";
+  }
+}
