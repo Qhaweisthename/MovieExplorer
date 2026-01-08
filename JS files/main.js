@@ -8,6 +8,7 @@ async function init() {
   // Set up all the buttons and input events
   setupEvents();
   loadFrontPageUi();
+  
 
   // Optional: load trending movies on first page load
   // const trending = await loadTrendingMovies();

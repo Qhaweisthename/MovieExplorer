@@ -1,4 +1,5 @@
 import { getData } from "./api.js"; // importing functions from api file
+import { searchedMovies } from "./ui.js";
 //import { renderMovies } from "./ui.js"; // your UI rendering function
 
 export function setupEvents() {  
@@ -13,8 +14,8 @@ export function setupEvents() {
     try{
     const movies = await getData(query); // using api from different file and waiting response 
 
-    console.log("Heres The Data: ",movies)
-    //if (movies) renderMovies(movies.results); // send results to UI
+    console.log("Heres The Data: ", movies);
+    if (movies) searchedMovies(movies.results); // send results to UI
     }catch(err){
       console.log("error movie could not be fetched: ", err);
     }

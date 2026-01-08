@@ -24,11 +24,19 @@
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-danger" id="reset-button">Reset</button>
       </form>
     </div>
 </nav>
     <!-- All visible page content goes here -->
     <h1 style="display: flex; justify-content: center;" class="my-2">Welcome to the movie Explorer</h1>
+
+    <!--Movies the users searched for-->
+    <section class="search-layouts">
+      <h2 class="my-2 mx-4" id="search-title"></h2>
+      <div id="searched-movie" class="d-flex flex-wrap"></div>
+
+    </section>
 
     <!--movie cards-->
 <section id="top-rated-movies" class="movie-layouts p-5">

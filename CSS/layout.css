@@ -32,3 +32,44 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/*search layout*/
+
+
+/* .search-layouts {
+  display: grid;
+  grid-template-columns: repeat(4); /* Desktop */
+  
+/* } */
+
+/* 
+@media (max-width: 1600px) {
+  .search-layouts {
+    grid-template-columns: repeat(4);
+  }
+}
+
+/* 
+/* Tablets */
+/* @media (max-width: 1200px) {
+  .search-layouts {
+    grid-template-columns: repeat(3);
+  }
+} */
+
+/* Small tablets */
+/* @media (max-width: 900px) {
+  .search-layouts {
+    grid-template-columns: repeat(2);
+  }
+} */
+
+/* Phones */
+/* @media (max-width: 530px) {
+  .search-layouts {
+    grid-template-columns: 1fr;
+  }
+} */ 
+
+
