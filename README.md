@@ -37,12 +37,7 @@ This project was built to practice working with APIs, async JavaScript, and DOM 
 
 ---
 
-## 🔑 API Setup
+## 🔑 Deployed Live Site From Github pages
 
-This project uses a public movie API.
+- link: [text](https://qhaweisthename.github.io/MovieExplorer/)
 
-1. Create a free API key from the API provider.
-2. Add your API key inside the JavaScript file:
-
-```javascript
-const API_KEY = "your_api_key_here";
